@@ -1,5 +1,5 @@
 {
-  "name": "@AchuDexQBit/security-audit",
+  "name": "@DexQBit/frontend-security-audit",
   "version": "1.7.0",
   "description": "Shared security audit tool and GitHub Actions workflow for Next.js projects",
   "type": "module",
@@ -14,7 +14,7 @@
     "workflows/"
   ],
   "scripts": {
-    "prepublishOnly": "echo 'Publishing @AchuDexQBit/security-audit'"
+    "prepublishOnly": "echo 'Publishing @DexQBit/security-audit'"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com",
@@ -22,7 +22,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AchuDexQBit/security-audit.git"
+    "url": "git+https://github.com/DexQBit/frontend-security-audit.git"
   },
   "keywords": ["security", "audit", "nextjs", "static-analysis"],
   "license": "UNLICENSED",

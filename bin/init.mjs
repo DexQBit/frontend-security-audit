@@ -38,13 +38,13 @@ console.log("Copied Security Gate");
 const npmrcPath = path.resolve(process.cwd(), ".npmrc");
 if (!fs.existsSync(npmrcPath)) {
   console.log("\nNo .npmrc found. Create one in the project root with:");
-  console.log("   @AchuDexQBit:registry=https://npm.pkg.github.com\n");
+  console.log("   @DexQBit:registry=https://npm.pkg.github.com\n");
 } else {
   const npmrc = fs.readFileSync(npmrcPath, "utf8");
   if (!npmrc.includes("npm.pkg.github.com")) {
     console.log("\nYour .npmrc may not be configured for GitHub Packages.");
     console.log("   Add this line to .npmrc:");
-    console.log("   @AchuDexQBit:registry=https://npm.pkg.github.com\n");
+    console.log("   @DexQBit:registry=https://npm.pkg.github.com\n");
   }
 }
 
@@ -52,7 +52,7 @@ if (!fs.existsSync(npmrcPath)) {
 console.log("\nAdd these scripts to your project's package.json:");
 console.log(`   "npm-audit":      "npm audit --audit-level=moderate",`);
 console.log(
-  `   "security:audit": "node node_modules/@AchuDexQBit/security-audit/bin/run.mjs"\n`,
+  `   "security:audit": "node node_modules/@DexQBit/security-audit/bin/run.mjs"\n`,
 );
 
 console.log("Done! Commit .github/workflows/security-gate.yml to your repo.\n");
